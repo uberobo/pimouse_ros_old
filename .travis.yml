@@ -1,9 +1,9 @@
 sudo: required
 dist: trusty
-language: python
 
-python:
-  - "3.5"
+before install:
+  - sudo apt-get update
+  - sudo apt-get install python3
 
 script:
   - bash -xve ./test/travis_ros_install.bash
