@@ -3,7 +3,7 @@ dist: trusty
 
 language: python
 python:
-  - "3.0"
+  - "3.1"
 
 script:
   - bash -xve ./test/travis_ros_install.bash
